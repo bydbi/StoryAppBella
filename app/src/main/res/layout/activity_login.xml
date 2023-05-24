@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".login.LoginActivity">
+
+    <TextView
+        android:id="@+id/title_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/titleLogin"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sub_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/subTitleLogin"
+        android:textSize="15sp"
+        android:textColor="@color/pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_log" />
+
+    <EditText
+        android:id="@+id/edtEmailLog"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:drawableStart="@drawable/baseline_account_circle_24"
+        android:drawablePadding="3dp"
+        android:ems="10"
+        android:hint="@string/emailLog"
+        android:alpha="0"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sub_log"
+        app:layout_constraintVertical_bias="0.18" />
+
+    <com.bella.storyappbella.customView.MyEditText
+        android:id="@+id/edtPassLog"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:drawableStart="@drawable/baseline_key_24"
+        android:drawablePadding="3dp"
+        android:hint="@string/passLog"
+        android:alpha="0"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/edtEmailLog"
+        app:layout_constraintStart_toStartOf="@+id/edtEmailLog"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmailLog"/>
+
+    <TextView
+        android:id="@+id/tvMinPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/minPass"
+        android:alpha="0"
+        android:textColor="@color/orange"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassLog"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="29dp" />
+
+    <com.bella.storyappbella.customView.ButtonCustom
+        android:id="@+id/btnLogin"
+        android:layout_width="350dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="68dp"
+        android:padding="8dp"
+        android:text="@string/masuk"
+        android:alpha="0"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/edtPassLog"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtPassLog"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassLog" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">StoryApp Bella</string>
+    <string name="titleLogin">Masuk Akun</string>
+    <string name="subTitleLogin">Silakan masuk dengan menggunakan email yang terdaftar</string>
+    <string name="emailLog">Masukan Email</string>
+    <string name="passLog">Masukan Password</string>
+    <string name="masuk">Masuk</string>
+    <string name="daftar">Daftar</string>
+
+    <string name="titleWelcome">Selamat Datang di Story Apps</string>
+
+    <string name="titleRegist">Daftar Akun</string>
+    <string name="subTitleRegis">Silakan lengkapi data diri dengan benar</string>
+    <string name="nama">Masukan Nama</string>
+
+    <string name="kamera">Kamera</string>
+    <string name="galeri">Galeri</string>
+    <string name="fill_description">Tambahkan Deskripsi</string>
+    <string name="unggah">Unggah</string>
+
+    <string name="username">Username</string>
+    <string name="description">Deskripsi</string>
+    <string name="addStory">Tambah Story</string>
+    <string name="keluarApp">Keluar</string>
+    <string name="ganti_bahasa">Ganti Bahasa</string>
+    <string name="minPass">Minimal 8 karakter</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <string name="normal_type">Normal</string>
+    <string name="satellite_type">Satellite</string>
+    <string name="terrain_type">Terrain</string>
+    <string name="hybrid_type">Hybrid</string>
+    <string name="maps">Maps</string>
+</resources>
